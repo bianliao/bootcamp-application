@@ -1,18 +1,26 @@
 /* design-guideline.css */
 :root {
-    ---color-cyan-500: #134cdf;
-    ---color-magenta-500: #f3542b;
-    ---color-yellow-500: #f7b62e;
-    ---color-zinc-50: #FAFAFA;
-    ---color-zinc-100: #F4F4F5;
-    ---color-zinc-200: #E4E4E7;
-    ---color-zinc-300: #D4D4D8;
-    ---color-zinc-400: #A1A1A9;
-    ---color-zinc-500: #717179;
-    ---color-zinc-600: #52525A;
-    ---color-zinc-700: #3F3F45;
-    ---color-zinc-800: #27272A;
-    ---color-zinc-900: #18181B;
+    --color-cyan-500: #134cdf;
+    --color-magenta-500: #f3542b;
+    --color-yellow-500: #f7b62e;
+    --color-zinc-50: #FAFAFA;
+    --color-zinc-100: #F4F4F5;
+    --color-zinc-200: #E4E4E7;
+    --color-zinc-300: #D4D4D8;
+    --color-zinc-400: #A1A1A9;
+    --color-zinc-500: #717179;
+    --color-zinc-600: #52525A;
+    --color-zinc-700: #3F3F45;
+    --color-zinc-800: #27272A;
+    --color-zinc-900: #18181B;
+
+    --color-white-100: #ffffff;
+    --color-white-80: #ffffffcc;
+    --color-white-60: #ffffff99;
+    --color-white-50: #ffffff80;
+    --color-white-40: #ffffff66;
+    --color-white-20: #ffffff33;
+    --color-white-5:  #ffffff0d;
 
     --font-line-height-xs: 1rem; /*16px*/
     --font-line-height-sm: 1.25rem; /*20px*/
@@ -44,12 +52,32 @@ h2{
     line-height: var(--font-line-height-100);
     font-weight: var(--font-weight-700);
     font-family: var(--font-family);
+    padding: 0;
+    margin: 0;
 }
 
 h3{
     font-size: var(--font-size-2xl);
     line-height: var(--font-line-height-100);
     font-weight: var(--font-weight-500);
+    font-family: var(--font-family);
+    margin: 16px 0;
+    padding: 0;
+}
+
+p{
+    font-size: var(--font-size-base);
+    line-height: var(--font-line-height-base);
+    font-weight: var(--font-weight-400);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 4px 0;
+}
+
+ul{
+    font-size: var(--font-size-base);
+    line-height: var(--font-line-height-base);
+    font-weight: var(--font-weight-400);
     font-family: var(--font-family);
 }
   
