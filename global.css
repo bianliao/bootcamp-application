@@ -14,12 +14,13 @@
     ---color-zinc-800: #27272A;
     ---color-zinc-900: #18181B;
 
-    --font-height-xs: 1rem; /*16px*/
-    --font-height-sm: 1.25rem; /*20px*/
-    --font-height-base: 1.5rem; /*24px*/
-    --font-height-lg: 1.75rem; /*28px*/
-    --font-height-xl: 1.75rem; /*28px*/
-    --font-height-2xl: 2rem; /*32px*/
+    --font-line-height-xs: 1rem; /*16px*/
+    --font-line-height-sm: 1.25rem; /*20px*/
+    --font-line-height-base: 1.5rem; /*24px*/
+    --font-line-height-lg: 1.75rem; /*28px*/
+    --font-line-height-xl: 1.75rem; /*28px*/
+    --font-line-height-2xl: 2rem; /*32px*/
+    --font-line-height-100: 1.2;
     
     --font-size-xs: 0.75rem; /*12px*/
     --font-size-sm: 0.875rem; /*14px*/
@@ -27,6 +28,8 @@
     --font-size-lg: 1.125rem; /*18px*/
     --font-size-xl: 1.25rem; /*20px*/
     --font-size-2xl: 1.5rem; /*24px*/
+    --font-size-4xl: 2.25rem; /*36px*/
+    --font-size-5xl: 3rem; /*48px*/
 
     
     --font-weight-400: 400;
@@ -37,57 +40,57 @@
 }
 
 h2{
-    font-size: var(--font-size-2xl);
-    line-height: var(--line-height-2xl);
+    font-size: var(--font-size-5xl);
+    line-height: var(--font-line-height-100);
     font-weight: var(--font-weight-700);
     font-family: var(--font-family);
 }
 
 h3{
-    font-size: var(--font-size-xl);
-    line-height: var(--font-size-xl);
+    font-size: var(--font-size-2xl);
+    line-height: var(--font-line-height-100);
     font-weight: var(--font-weight-500);
     font-family: var(--font-family);
 }
   
 .text-xs {
     font-size: var(--font-size-xs);
-    line-height: var(--line-height-xs);
+    line-height: var(--font-line-height-xs);
     font-weight: var(--font-weight-400);
     font-family: var(--font-family);
 }
 
 .text-sm {
     font-size: var(--font-size-sm);
-    line-height: var(--line-height-sm);
+    line-height: var(--font-line-height-sm);
     font-weight: var(--font-weight-400);
     font-family: var(--font-family);
 }
 
 .text-base {
     font-size: var(--font-size-base);
-    line-height: var(--line-height-base);
+    line-height: var(--font-line-height-base);
     font-weight: var(--font-weight-400);
     font-family: var(--font-family);
 }
 
 .text-lg {
     font-size: var(--font-size-lg);
-    line-height: var(--line-height-lg);
+    line-height: var(--font-line-height-lg);
     font-weight: var(--font-weight-400);
     font-family: var(--font-family);
 }
 
 .text-xl {
     font-size: var(--font-size-xl);
-    line-height: var(--line-height-xl);
+    line-height: var(--font-line-height-xl);
     font-weight: var(--font-weight-400);
     font-family: var(--font-family);
 }
 
 .text-2xl {
     font-size: var(--font-size-2xl);
-    line-height: var(--line-height-2xl);
+    line-height: var(--font-line-height-2xl);
     font-weight: var(--font-weight-400);
     font-family: var(--font-family);
 }
