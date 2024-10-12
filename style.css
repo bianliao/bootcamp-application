@@ -9,7 +9,7 @@ body{
     padding: 0;
 }
 
-#intro, #arrange{
+#intro, #arrange, #insights{
     background-color: var(--color-cyan-500);
     color: var(--color-zinc-200);  
 }
@@ -19,7 +19,7 @@ body{
     color: var(--color-zinc-900);   
 }
 
-#worthwhile{
+#worthwhile, #bond, #others{
     background-color: white;
     color: var(--color-zinc-900);     
 }
@@ -177,6 +177,39 @@ strong{
     background-color: var(--color-white-50);
 }
 
+/* container, id = bond */
+
+#bond .title, #bond .desc, #bond .context{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#bond .subtitle{
+    color: var(--color-cyan-500);
+}
+
+#bond .quote{
+    border-radius:16px;
+    background-color: var(--color-cyan-500);
+    color: var(--color-zinc-50);
+}
+
+/* container, id = others */
+
+#others .title, #others .desc, #others .context{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#others .subtitle{
+    color: var(--color-cyan-500);
+}
+
+#others .quote{
+    border-radius:16px;
+    background-color: var(--color-cyan-500);
+    color: var(--color-zinc-50);
+}
 
 /* decor and img, id = intro */
 
