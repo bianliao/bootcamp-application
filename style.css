@@ -14,7 +14,7 @@ body{
     color: var(--color-zinc-200);  
 }
 
-#learn{
+#learn, #emotions{
     background-color: var(--color-zinc-200);
     color: var(--color-zinc-900);   
 }
@@ -53,7 +53,7 @@ a:hover{
     color: var(--color-zinc-50);
 }
 
-/* container, id = intro, arrang */
+/* container, id = intro, arrange */
 
 .container{
     position: relative;
@@ -74,6 +74,7 @@ a:hover{
 .desc{
     padding: 40px 0 40px 0;
     max-width: 640px;
+    backdrop-filter: blur(4px);
 }
 
 #intro a, #arrange a{
@@ -83,6 +84,7 @@ a:hover{
 .context{
     padding: 40px 0 0 0;
     max-width: 640px;
+    backdrop-filter: blur(4px);
 }
 
 .quote{
@@ -91,6 +93,7 @@ a:hover{
     padding: 12px;
     border-radius: 2px 16px 16px 2px;
     background-color: var(--color-white-5);
+    backdrop-filter: blur(4px);
 }
 
 .listTitle{
@@ -126,13 +129,13 @@ strong{
     color: var(--color-zinc900);
 }
 
-/* container,, id = arrange */
+/* container, id = arrange */
 #arrange strong{
     font-weight: var(--font-weight-500);
     color: var(--color-magenta-500);
 }
 
-/* container,, id = worthwhile */
+/* container, id = worthwhile */
 
 #worthwhile .title, #worthwhile .desc, #worthwhile .context{
     text-align: center;
@@ -147,6 +150,31 @@ strong{
     border-radius:16px;
     background-color: var(--color-cyan-500);
     color: var(--color-zinc-50);
+}
+
+/* container, id = emotions */
+#emotions .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#emotions h2{
+    color: var(--color-magenta-500);
+    font-weight: var(--font-weight-500);
+}
+
+#emotions .title{
+    text-align: right;
+}
+
+#emotions .subtitle{
+    color: var(--color-magenta-500);
+}
+
+#emotions .quote{
+    border-radius: 16px 2px 2px 16px;
+    background-color: var(--color-white-50);
 }
 
 
@@ -185,4 +213,12 @@ strong{
 #arrange .decor-img {
     top: 400px;
     right: 80px;
+}
+
+/* decor and img, id = emotions */
+#emotions .decor-img {
+    top: 400px;
+    left: 0;
+    width: 600px;
+    height: 600px;
 }
