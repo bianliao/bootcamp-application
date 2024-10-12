@@ -19,6 +19,11 @@ body{
     color: var(--color-zinc-900);   
 }
 
+#worthwhile{
+    background-color: white;
+    color: var(--color-zinc-900);     
+}
+
 .fragment{
     max-width: 1440px;
     padding: 80px 80px 200px 80px;
@@ -82,7 +87,6 @@ a:hover{
 
 .quote{
     margin: 40px 0 0 0;
-    max-width: 640px;
     box-sizing: border-box;
     padding: 12px;
     border-radius: 2px 16px 16px 2px;
@@ -128,6 +132,24 @@ strong{
     color: var(--color-magenta-500);
 }
 
+/* container,, id = worthwhile */
+
+#worthwhile .title, #worthwhile .desc, #worthwhile .context{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#worthwhile .subtitle{
+    color: var(--color-cyan-500);
+}
+
+#worthwhile .quote{
+    border-radius:16px;
+    background-color: var(--color-cyan-500);
+    color: var(--color-zinc-50);
+}
+
+
 /* decor and img, id = intro */
 
 .decor {
@@ -152,7 +174,6 @@ strong{
 }
 
 /* decor and img, id = learn */
-
 #learn .decor-img {
     top: 800px;
     right: 80px;
