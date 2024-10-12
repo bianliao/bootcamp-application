@@ -1,0 +1,299 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: var(--color-zinc-50);
+    margin: 0;
+    padding: 0;
+}
+
+#opening{
+    background-color: black;
+    height: 110vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#intro, #arrange, #insights{
+    background-color: var(--color-cyan-500);
+    color: var(--color-zinc-200);  
+    overflow: hidden;
+}
+
+#learn, #emotions{
+    background-color: var(--color-zinc-200);
+    color: var(--color-zinc-900); 
+    overflow: hidden;  
+}
+
+#worthwhile, #bond, #others{
+    background-color:var(--color-white-100);
+    color: var(--color-zinc-900);  
+    overflow: hidden;   
+}
+
+.fragment{
+    max-width: 1440px;
+    padding: 80px 80px 200px 80px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10rem;
+    line-height: 120%;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+    color: var(--color-zinc-50);
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 16px 16px 4px 16px;
+    border-left: 1px solid var(--color-zinc-400);
+}
+
+li{
+    margin: 0;
+    padding: 4px 0;
+}
+
+a{
+    text-decoration: none;
+    font-weight: var(--font-weight-500);
+}
+
+a:hover{
+    text-decoration: underline;
+    color: var(--color-zinc-50);
+}
+
+/* container, id = opening */
+.decor-mix{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.decor-greeting{
+    width: 0;
+    position: relative;
+    left: -344px;
+    text-align: center;
+    overflow: visible;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 24px;
+    z-index: 1;
+}
+
+.hello {
+    font-weight: 400;
+    font-family: 'Cormorant', 'Times New Roman', Times, serif, sans-serif;
+    font-style: italic;
+}
+
+.decor-img-man{
+    flex: 1;
+    height: 110vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    opacity: 1;
+    overflow: visible;
+    z-index: 0;
+}
+
+.decor-img-woman{
+    flex: 1;
+    height: 110vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    opacity: 1;
+    overflow: visible;
+    z-index: 2;
+}
+
+.opening-name{
+    max-width: 1440px;
+    bottom: 20vh;
+    position: relative;
+    text-align: right;
+    margin: 0 auto;
+    padding-right: 80px;
+}
+
+.opening-name h2{
+    color: var(--color-white-100);
+    font-size: var(--font-size-4xl);
+    font-family: 'Cormorant', 'Times New Roman', Times, serif, sans-serif;
+}
+
+.opening-name p{
+    color: var(--color-white-100);
+}
+
+/* container, id = intro, arrange */
+
+.container{
+    position: relative;
+    z-index: 1;
+}
+
+.title{
+    margin: 0;
+    padding: 0 0 120px 0;
+}
+
+.subtitle{
+    font-family: 'Cormorant', 'Times New Roman', Times, serif, sans-serif;
+}
+
+.desc{
+    padding: 40px 0 40px 0;
+    max-width: 640px;
+    backdrop-filter: blur(4px);
+}
+
+#intro a, #arrange a{
+    color: var(--color-yellow-500);
+}
+
+.context{
+    padding: 40px 0 0 0;
+    max-width: 640px;
+    backdrop-filter: blur(4px);
+}
+
+.quote{
+    margin: 40px 0 0 0;
+    box-sizing: border-box;
+    padding: 12px;
+    border-radius: 2px 16px 16px 2px;
+    background-color: var(--color-white-5);
+    backdrop-filter: blur(4px);
+}
+
+.listTitle{
+    margin-top: 12px;
+    color: var(--color-zinc-50);
+}
+
+strong{
+    font-weight: var(--font-weight-500);
+    color: var(--color-zinc-50);
+}
+
+/* container, id = learn */
+
+#learn h2{
+    color: var(--color-cyan-500);
+    font-weight: var(--font-weight-500);
+}
+
+#learn .title{
+    text-align: right;
+}
+
+#learn .subtitle{
+    color: var(--color-magenta-500);
+}
+
+#learn a{
+    color: var(--color-yellow-500);
+}
+
+#learn .listTitle{
+    color: var(--color-zinc900);
+}
+
+/* container, id = arrange */
+#arrange strong{
+    font-weight: var(--font-weight-500);
+    color: var(--color-magenta-500);
+}
+
+/* container, id = worthwhile */
+
+#worthwhile .title, #worthwhile .desc, #worthwhile .context{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#worthwhile .subtitle{
+    color: var(--color-cyan-500);
+}
+
+#worthwhile .quote{
+    border-radius:16px;
+    background-color: var(--color-cyan-500);
+    color: var(--color-zinc-50);
+}
+
+/* container, id = emotions */
+#emotions .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#emotions h2{
+    color: var(--color-magenta-500);
+    font-weight: var(--font-weight-500);
+}
+
+#emotions .title{
+    text-align: right;
+}
+
+#emotions .subtitle{
+    color: var(--color-magenta-500);
+}
+
+#emotions .quote{
+    border-radius: 16px 2px 2px 16px;
+    background-color: var(--color-white-50);
+}
+
+/* container, id = bond */
+
+#bond .title, #bond .desc, #bond .context{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#bond .subtitle{
+    color: var(--color-cyan-500);
+}
+
+#bond .quote{
+    border-radius:16px;
+    background-color: var(--color-cyan-500);
+    color: var(--color-zinc-50);
+}
+
+/* container, id = others */
+
+#others .title, #others .desc, #others .context{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#others .subtitle{
+    color: var(--color-cyan-500);
+}
+
+#others .quote{
+    border-radius:16px;
+    background-color: var(--color-cyan-500);
+    color: var(--color-zinc-50);
+}

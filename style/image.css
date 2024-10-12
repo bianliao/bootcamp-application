@@ -1,0 +1,76 @@
+/* decor and img, id = opening */
+.decor-down {
+    max-width: 1440px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.decor-img-decor {
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 144px;
+    background-size: cover; 
+    top: 8vh;
+    left: 8vw;
+    transform: translate(50%, 50%); 
+    opacity: 1;
+}
+
+.decor-img-center {
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 1360px;
+    height: 1290px;
+    background-size: cover; 
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%); 
+    opacity: 1;
+}
+
+/* decor and img, id = intro */
+.decor {
+    position: relative;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+.decor-img {
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 80px;
+    right: 80px;
+    width: 600px;
+    height: 540px;
+    background-size: cover; 
+    transform: translate(0%, 0%); /* 使圖片中心與容器中心對齊 */
+    opacity: 1;
+}
+
+/* decor and img, id = learn */
+#learn .decor-img {
+    top: 800px;
+    right: 80px;
+    width: 540px;
+    height: 340px;
+}
+
+/* decor and img, id = arrange */
+#arrange .decor-img {
+    top: 400px;
+    right: 80px;
+}
+
+/* decor and img, id = emotions */
+#emotions .decor-img {
+    top: 400px;
+    left: 0;
+    width: 600px;
+    height: 600px;
+}
