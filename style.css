@@ -123,6 +123,10 @@ h1{
     z-index: 2;
 }
 
+.decor-img-woman img{
+    overflow: visible; 
+}
+
 /* container, id = intro, arrange */
 
 .container{
@@ -305,44 +309,11 @@ strong{
 }
 
 /* decor and img, id = opening */
-
-
-/* .decor-up {
-    position: relative;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
 .decor-down {
     position: relative;
-    z-index: 0;
     top: 0;
     left: 0;
     width: 100%;
-}
-
-.decor-img-woman {
-    position: absolute;
-    background-repeat: no-repeat;
-    width: 636px;
-    height: 800px;
-    background-size: cover; 
-    top: 10vh;
-    left: 10vw;
-    opacity: 1;
-}
-
-.decor-img-man {
-    position: absolute;
-    background-repeat: no-repeat;
-    width: 636px;
-    height: 800px;
-    background-size: cover; 
-    top: -20vh;
-    right: 4vw;
-    opacity: 1;
 }
 
 .decor-img-decor {
@@ -353,6 +324,7 @@ strong{
     background-size: cover; 
     top: 8vh;
     left: 8vw;
+    transform: translate(50%, 50%); 
     opacity: 1;
 }
 
@@ -366,7 +338,7 @@ strong{
     left: 50vw;
     transform: translate(-50%, -50%); 
     opacity: 1;
-} */
+}
 
 /* decor and img, id = learn */
 #learn .decor-img {
