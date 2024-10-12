@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body{
     font-family: sans-serif;
     background-color: var(--color-zinc-50);
@@ -5,10 +9,9 @@ body{
     padding: 0;
 }
 
-#intro{
+#intro, #arrange{
     background-color: var(--color-cyan-500);
     color: var(--color-zinc-200);  
-    display: none; 
 }
 
 #learn{
@@ -45,7 +48,7 @@ a:hover{
     color: var(--color-zinc-50);
 }
 
-/* container, id = intro */
+/* container, id = intro, arrang */
 
 .container{
     position: relative;
@@ -68,7 +71,7 @@ a:hover{
     max-width: 640px;
 }
 
-#intro a{
+#intro a, #arrange a{
     color: var(--color-yellow-500);
 }
 
@@ -119,6 +122,12 @@ strong{
     color: var(--color-zinc900);
 }
 
+/* container,, id = arrange */
+#arrange strong{
+    font-weight: var(--font-weight-500);
+    color: var(--color-magenta-500);
+}
+
 /* decor and img, id = intro */
 
 .decor {
@@ -142,11 +151,17 @@ strong{
     opacity: 1;
 }
 
-/* decor and img, intro = learn */
+/* decor and img, id = learn */
 
 #learn .decor-img {
     top: 800px;
     right: 80px;
     width: 540px;
     height: 340px;
+}
+
+/* decor and img, id = arrange */
+#arrange .decor-img {
+    top: 400px;
+    right: 80px;
 }
