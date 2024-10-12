@@ -29,7 +29,7 @@ body{
 }
 
 #worthwhile, #bond, #others{
-    background-color: white;
+    background-color:var(--color-white-100);
     color: var(--color-zinc-900);  
     overflow: hidden;   
 }
@@ -39,6 +39,16 @@ body{
     padding: 80px 80px 200px 80px;
     margin: 0 auto;
     position: relative;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10rem;
+    line-height: 120%;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+    color: var(--color-zinc-50);
 }
 
 ul{
@@ -87,16 +97,6 @@ a:hover{
     z-index: 1;
 }
 
-h1{
-    font-family: 'Roboto', sans-serif;
-    font-size: 10rem;
-    line-height: 120%;
-    font-weight: 900;
-    padding: 0;
-    margin: 0;
-    color: var(--color-zinc-50);
-}
-
 .hello {
     font-weight: 400;
     font-family: 'Cormorant', 'Times New Roman', Times, serif, sans-serif;
@@ -123,8 +123,23 @@ h1{
     z-index: 2;
 }
 
-.decor-img-woman img{
-    overflow: visible; 
+.opening-name{
+    max-width: 1440px;
+    bottom: 20vh;
+    position: relative;
+    text-align: right;
+    margin: 0 auto;
+    padding-right: 80px;
+}
+
+.opening-name h2{
+    color: var(--color-white-100);
+    font-size: var(--font-size-4xl);
+    font-family: 'Cormorant', 'Times New Roman', Times, serif, sans-serif;
+}
+
+.opening-name p{
+    color: var(--color-white-100);
 }
 
 /* container, id = intro, arrange */
@@ -139,11 +154,9 @@ h1{
     padding: 0 0 120px 0;
 }
 
-
 .subtitle{
     font-family: 'Cormorant', 'Times New Roman', Times, serif, sans-serif;
 }
-
 
 .desc{
     padding: 40px 0 40px 0;
@@ -283,81 +296,4 @@ strong{
     border-radius:16px;
     background-color: var(--color-cyan-500);
     color: var(--color-zinc-50);
-}
-
-/* decor and img, id = intro */
-
-.decor {
-    position: relative;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-
-.decor-img {
-    position: absolute;
-    background-repeat: no-repeat;
-    top: 80px;
-    right: 80px;
-    width: 600px;
-    height: 540px;
-    background-size: cover; 
-    transform: translate(0%, 0%); /* 使圖片中心與容器中心對齊 */
-    opacity: 1;
-}
-
-/* decor and img, id = opening */
-.decor-down {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-.decor-img-decor {
-    position: absolute;
-    background-repeat: no-repeat;
-    width: 160px;
-    height: 144px;
-    background-size: cover; 
-    top: 8vh;
-    left: 8vw;
-    transform: translate(50%, 50%); 
-    opacity: 1;
-}
-
-.decor-img-center {
-    position: absolute;
-    background-repeat: no-repeat;
-    width: 1360px;
-    height: 1290px;
-    background-size: cover; 
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%); 
-    opacity: 1;
-}
-
-/* decor and img, id = learn */
-#learn .decor-img {
-    top: 800px;
-    right: 80px;
-    width: 540px;
-    height: 340px;
-}
-
-/* decor and img, id = arrange */
-#arrange .decor-img {
-    top: 400px;
-    right: 80px;
-}
-
-/* decor and img, id = emotions */
-#emotions .decor-img {
-    top: 400px;
-    left: 0;
-    width: 600px;
-    height: 600px;
 }
