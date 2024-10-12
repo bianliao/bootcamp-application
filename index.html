@@ -13,13 +13,11 @@
 <body>
     <header></header>
     <main>
-       <div class="wrapper">
-            <section id="intro">
+       <div id="intro">
+            <section class="fragment">
                 <div class="decor">
-                    <div class="decor-inner">
-                        <img src="image/intro-down.png" alt="">
-                        <img src="image/intro-up.png" alt="">
-                    </div>
+                        <div class="decor-img" style="background-image: url(image/intro-down.png);"></div>
+                        <div class="decor-img" style="background-image: url(image/intro-up.png);"></div>
                 </div>
                 <div class="container">
                     <div class="title">
@@ -41,12 +39,12 @@
                         <p>原本學習程式的初衷是希望在與開發團隊的溝通上能夠更加精準、有效率。但在學習過程中，
                             我更深感著迷於程式設計的邏輯與思維方式。</p>
                         <ul>
-                            <li class="listTitle">邏輯推理與問題拆解的魅力</li>
+                            <li class="text-lg-500 listTitle">邏輯推理與問題拆解的魅力</li>
                             <li>在過往的經驗及個人生活中，我擅長邏輯推理與拆解問題的能力，也很享受過程中的成就感。
                                 而程式世界中就是需要不斷的將複雜的需求逐步分解、設計。看到程式如預期運行時是非常令人振奮的。</li>
                         </ul>
                         <ul>
-                            <li  class="listTitle">解決問題的角色轉變</li>
+                            <li  class="text-lg-500 listTitle">解決問題的角色轉變</li>
                             <li>在目前的設計工作中，我經常是提出需求的角色，而工程師則是解決需求的關鍵角色。
                                 當然兩個工作角色要解決的問題不太相同，但在個人職涯的發展中，我發現自己對技術的興趣愈加濃厚，
                                 在商業及技術的平衡木中逐漸趨向了後者。</li>
@@ -57,21 +55,21 @@
                         <p>在過去三個月中，我已利用業餘時間完成了多堂 Udemy 的入門課程，但自學過程中遇到三大瓶頸：
                             <strong>無法檢視學習成效</strong>、<strong>單向學習的困境</strong>、<strong>學習進度難以如期</strong></p>
                         <ul>
-                            <li class="listTitle">不知如何檢視學習成效，專案範圍的抓捏不夠精準</li>
+                            <li class="text-lg-500 listTitle">不知如何檢視學習成效，專案範圍的抓捏不夠精準</li>
                             <li>完成線上課程後，無法準確評估自己是否足夠進入下一階段。當試圖以專案檢視所學時，
                                 難以抓準專案範圍、不知道要進行什麼專案才能「剛好」檢驗我當前的能力、無法評估自己的能力或設計是否達到標準。</li>
-                            <li class="listTitle">線上課程單向輸出，無法及時反饋</li>
+                            <li class="text-lg-500 listTitle">線上課程單向輸出，無法及時反饋</li>
                             <li>自學過程中，無法及時獲得反饋，導致在面對新概念時，無法靈活應用。
                                 例如在以專案為單位的課程中並沒辦法理解 JavaScript 中的 Hoisting 與 Execution Context 是非常重要的知識，
                                 但在基礎課程中又會因為內容相對抽象無法快速理解。<br> 這期間應用 chatGPT、詢問同事、交叉課程及不斷複習來克服上述狀況，
                                 但如果能夠有一同學習的夥伴以及相對復合式的課程的話能夠減少這之中非常多的時間浪費及挫折。</li>
-                            <li class="listTitle">學習進度無法如期進行</li>
+                            <li class="text-lg-500 listTitle">學習進度無法如期進行</li>
                             <li>由於目前利用下班時間進行學習，進度常常無法按預期進行，專案計畫也不斷延宕。縱使全職自學可以解決學習進度的問題，
                                 但上述兩點的問題依舊存在。</li>
                         </ul>
                     </div>
                     <div class="context quote">
-                        <p class="text-2xl">跟轉職前輩討論了目前學習狀況後，我們認為加入 Bootcamp 能有效解決我的學習問題。
+                        <p class="text-2xl-500">跟轉職前輩討論了目前學習狀況後，我們認為加入 Bootcamp 能有效解決我的學習問題。
                             而 Wehelp 在多方面也可以解決我目前的學習問題。</p>
                         <ul>
                             <li class="text-lg"><strong>系統性的課程安排：</strong> 理解技術邏輯及實務任務，避免無法靈活應用的窘境</li>
@@ -82,9 +80,50 @@
                 </div>  
             </section>
        </div>
-
-        <section></section>
-        <section></section>
+       <div id="learn">
+            <section class="fragment">
+                <div class="decor">
+                    <div class="decor-img" style="background-image: url(image/learn-down.png);"></div>
+                    <div class="decor-img" style="background-image: url(image/learn-up.png);"></div>
+                </div> 
+                <div class="container">
+                    <div class="title">
+                        <p class="text-2xl subtitle">Relevant Technical Learning</p>
+                        <h2>曾經做過哪些軟體工程技術相關的學習？<br> 若有作品請分享給我們</h2>
+                    </div>
+                    <div class="context">
+                        <h3>自學之前</h3>
+                        <ul>
+                            <li class="text-lg-500 listTitle">學習 HTML 及 CSS</li>
+                            <li>工作中，為了解決舊產品介面問題，我開始使用 CSS 並在開發者模式中進行畫面調整，提供精準的需求說明。</li>
+                        </ul>
+                        <ul>
+                            <li  class="text-lg-500 listTitle">Git 和 GitHub 協作</li>
+                            <li>在 AmazingTalker 的設計工作中，為了解決內部設計問題及說明元件應用規範，開始在 
+                                <a href="https://res.staging.amazingtalker.com/storybook-ui/index.html?path=/docs/bottomsheet--docs" target="_blank" title="AmazingTalker storybook">Storybook</a>
+                                編寫文件，送出第一個 Pull Request，並得到前端同事的協助，此時的文件框架是由前端同事協助完成。</li>
+                        </ul>
+                        <div class="gallery"></div>
+                    </div>
+                    <div class="context">
+                        <h3>自學之路</h3>
+                        <ul>
+                            <li class="listTitle">
+                                <a href="https://www.udemy.com/course/100-days-of-code-web-development-bootcamp/?couponCode=KEEPLEARNING" target="_blank" title="Udemy course"> 
+                                    100 Days Of Code - 2024 Web Development Bootcamp</a>
+                            </li>
+                            <li>學習拆解頁面設計與開發小單位，並保持主動思考 HTML tag 和 CSS 屬性的使用。</li>
+                            <li class="listTitle">
+                                <a href="https://www.udemy.com/course/understand-javascript/?couponCode=KEEPLEARNING" target="_blank" title="Udemy course"> 
+                                    JavaScript: Understanding the Weird Parts (2024 Edition)</a>
+                            </li>
+                            <li>因為注意到前面的課程在這部分的不足，因此這堂課是針對 JavaScript 的基礎進行鞏固，如：理解 Execution Context 和 Hoisting 等關鍵概念，幫助重寫與應用程式碼。</li>
+                        </ul>
+                        <div class="gallery"></div>
+                    </div>  
+                </div>  
+            </section>
+        </div>
 
     </main>
     <footer></footer>

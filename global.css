@@ -109,6 +109,13 @@ ul{
     font-family: var(--font-family);
 }
 
+.text-lg-500 {
+    font-size: var(--font-size-lg);
+    line-height: var(--font-line-height-lg);
+    font-weight: var(--font-weight-500);
+    font-family: var(--font-family);
+}
+
 .text-xl {
     font-size: var(--font-size-xl);
     line-height: var(--font-line-height-xl);
@@ -120,5 +127,12 @@ ul{
     font-size: var(--font-size-2xl);
     line-height: var(--font-line-height-2xl);
     font-weight: var(--font-weight-400);
+    font-family: var(--font-family);
+}
+
+.text-2xl-500 {
+    font-size: var(--font-size-2xl);
+    line-height: var(--font-line-height-2xl);
+    font-weight: var(--font-weight-500);
     font-family: var(--font-family);
 }
