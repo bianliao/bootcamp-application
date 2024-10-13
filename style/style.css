@@ -51,7 +51,7 @@ h1{
     color: var(--color-zinc-50);
 }
 
-ul{
+ul, ol{
     list-style: none;
     margin: 0;
     padding: 16px 16px 4px 16px;
@@ -214,6 +214,61 @@ strong{
 
 #learn .listTitle{
     color: var(--color-zinc900);
+}
+
+#learn ol{
+    display: flex;
+    gap: 24px;
+    overflow: auto;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+    padding: 16px 16px;
+    background-color: var(--color-white-50);
+}
+
+.gallery{
+    height: 280px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.gallery img{
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    top: 50%; 
+    left: 50%; 
+}
+
+.gallery-context{
+    max-width: 400px;
+    margin: auto 8px;
+}
+
+.gallery-title{
+    font-weight: var(--font-weight-500);
+}
+
+.text-xs{
+    color: var(--color-zinc-700);
+}
+
+.actions{
+    text-align: right;
+    width: inherit;
+    position: relative;
+    bottom: 36px;
+    right: 12px;
+}
+
+.actions a{
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.actions a:hover{
+    background-color: var(--color-white-50);
 }
 
 /* container, id = arrange */
