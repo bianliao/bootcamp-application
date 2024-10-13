@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body{
     font-family: sans-serif;
     background-color: var(--color-zinc-50);
@@ -236,6 +241,7 @@ strong{
     margin: 0 auto;
     padding: 16px 16px;
     background-color: var(--color-white-50);
+    backdrop-filter: blur(4px);
 }
 
 .gallery{
@@ -383,7 +389,7 @@ strong{
     border-radius: 20px;
     margin: 0;
     padding: 4px 0;
-    background-color: var(--color-white-10);
+    background-color: var(--color-white-20);
     border: none;
 }
 
@@ -405,7 +411,10 @@ strong{
     margin: 8px;
     background-color: var(--color-zinc-50);
     border-radius: 50%;
-    transition: background-color .3s ease-in-out;
+}
+
+.shortcut:hover{
+    background-color: var(--color-cyan-500);
 }
 
 .page-navigation p{
@@ -418,4 +427,10 @@ strong{
     padding: 2px 16px;
     border-radius: 16px;
     white-space: nowrap;
+}
+
+.hint{
+    display: none;
+    /* opacity: 0;
+    animation: none; */
 }
