@@ -106,21 +106,33 @@ a:hover{
 .decor-img-man{
     flex: 1;
     height: 110vh;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    opacity: 1;
     overflow: visible;
     z-index: 0;
+}
+
+.decor-img-man img{
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    position: relative;
+    left: 0;   
 }
 
 .decor-img-woman{
     flex: 1;
     height: 110vh;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    opacity: 1;
     overflow: visible;
     z-index: 2;
+}
+
+.decor-img-woman img{
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    position: relative;
+    right: 0;   
 }
 
 .opening-name{
