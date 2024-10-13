@@ -414,6 +414,10 @@ strong{
 }
 
 .shortcut:hover{
+    background-color: var(--color-zinc-400);
+}
+
+.shortcut-active{
     background-color: var(--color-cyan-500);
 }
 
