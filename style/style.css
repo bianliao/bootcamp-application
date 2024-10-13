@@ -431,6 +431,5 @@ strong{
 
 .hint{
     display: none;
-    /* opacity: 0;
-    animation: none; */
+    transition: none;
 }
