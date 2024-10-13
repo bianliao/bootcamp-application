@@ -20,12 +20,16 @@
                 <div class="decor-img-decor" style="background-image: url(image/opening-decor.png);"></div>
             </div> 
             <div class="decor-mix">
-                <div class="decor-img-woman" style="background-image: url(image/opening-woman.png);"></div>
+                <div class="decor-img-woman">
+                    <img src="image/opening-woman.png" alt="">
+                </div>
                 <div class="decor-greeting">
                     <h1 class="hello">Hello</h1>
                     <h1>World</h1>
                 </div>
-                <div class="decor-img-man" style="background-image: url(image/opening-man.png);"></div>
+                <div class="decor-img-man">
+                    <img src="image/opening-man.png" alt="">
+                </div>
             </div>
             <div class="opening-name">
                 <h2>Liao YiYun</h2>
@@ -48,7 +52,7 @@
                             作為公司唯一的專職設計師，我不僅專注於需求設計，還負責建立基礎的設計架構與流程、定義設計規範，
                             以及在研究與開發之間架起溝通橋樑。同時，我也致力於推動以使用者體驗為核心的設計思維分享。<br>
                             在去年跟友人進行了開發了一個以「時間」為單位、以創者者及自由工作者為主要客群的預約平台 
-                            <a href="https://staging.bukku.life/booking/QQ" target="_blank" title="BUKKU">BUKKU</a>。
+                            <a href="https://staging.bukku.life/booking/QQ" target="_blank" title="BUKKU">BUKKU (DEMO)</a>。
                             作為 PM 及 Designer 之虞，也不斷的跟工程師討論需求及設計方式。<br>隨著工作及專案接觸到愈來愈多的開發，
                             漸漸被程式的世界觀所吸引，萌生轉職成為工程師的動機。<br>在 UI/UX designer 之前，作為產品設計師、平面設計師所參與過的專案及研究作品都在 
                             <a href="https://yiyunbiandesign.editorx.io/home" target="_blank" title="yiyunbiandesign">yiyunbiandesign</a>。</p>
@@ -89,7 +93,7 @@
                     </div>
                     <div class="context quote">
                         <p class="text-2xl-500">跟轉職前輩討論了目前學習狀況後，我們認為加入 Bootcamp 能有效解決我的學習問題。
-                            而 Wehelp 在多方面也可以解決我目前的學習問題。</p>
+                            而 WeHelp 在多方面也可以解決我目前的學習問題。</p>
                         <ul>
                             <li class="text-lg"><strong>系統性的課程安排：</strong> 理解技術邏輯及實務任務，避免無法靈活應用的窘境</li>
                             <li class="text-lg"><strong>階段式目標及任務：</strong>符合當前能力及挑戰的專案</li>
@@ -114,16 +118,49 @@
                         <h3>自學之前</h3>
                         <ul>
                             <li class="text-lg-500 listTitle">學習 HTML 及 CSS</li>
-                            <li>工作中，為了解決舊產品介面問題，我開始使用 CSS 並在開發者模式中進行畫面調整，提供精準的需求說明。</li>
+                            <li>工作中在解決舊產品介面問題時注意到用 Figma 交付反而會有過多不必要資訊，我開始使用 DevTools 進行畫面調整，提供精準的需求說明。</li>
                         </ul>
                         <ul>
                             <li  class="text-lg-500 listTitle">Git 和 GitHub 協作</li>
                             <li>在 AmazingTalker 的設計工作中，為了解決內部設計問題及說明元件應用規範，開始在 
                                 <a href="https://res.staging.amazingtalker.com/storybook-ui/index.html?path=/docs/bottomsheet--docs" target="_blank" title="AmazingTalker storybook">Storybook</a>
-                                編寫文件，送出第一個 Pull Request，並得到前端同事的協助，此時的文件框架是由前端同事協助完成。</li>
+                                編寫文件，送出第一個 Pull Request。</li>
                         </ul>
-                        <div class="gallery"></div>
                     </div>
+                    <ol>
+                        <li>
+                            <div class="gallery">
+                                <img src="/image/learning-storybook.png" alt="storybook" />
+                                <div class="actions">
+                                    <a href="https://res.staging.amazingtalker.com/storybook-ui/index.html?path=/docs/bottomsheet--docs">Read More</a>
+                                </div>
+                            </div>
+                            <div class="gallery-context">
+                                <p class="text-sm gallery-title">AmazingTalker Storybook</p>
+                                <p class="text-xs">
+                                    這是專案始於自學計畫之前，所以框架的設計是前端同事協助完成的，後面負責文件撰寫並且利用現有的框架調整出適當的說明文件。
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gallery">
+                                <img src="/image/learning-dev.png" alt="demo" />
+                            </div>
+                            <div class="gallery-context">
+                                <p class="text-sm gallery-title">DevTools Demo</p>
+                                <p class="text-xs">使用 DevTools 是我開始接觸 CSS 及 HTML 的開始。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gallery">
+                                <img src="/image/learning-dev2.png" alt="demo" />
+                            </div>
+                            <div class="gallery-context">
+                                <p class="text-sm gallery-title">DevTools Demo</p>
+                                <p class="text-xs">使用 DevTools 是我開始接觸 CSS 及 HTML 的開始。</p>
+                            </div>
+                        </li>                        
+                    </ol>
                     <div class="context">
                         <h3>自學之路</h3>
                         <ul>
@@ -138,8 +175,47 @@
                             </li>
                             <li>因為注意到前面的課程在這部分的不足，因此這堂課是針對 JavaScript 的基礎進行鞏固，如：理解 Execution Context 和 Hoisting 等關鍵概念，幫助重寫與應用程式碼。</li>
                         </ul>
-                        <div class="gallery"></div>
-                    </div>  
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="gallery">
+                                <img src="/image/learning-js.png" alt="tic-tac-toe" />
+                                <div class="actions">
+                                    <a href="/webdevelopment-tic-tac-toe/index.html" target="_blank" title="tic-tac-toe page">Read More</a>
+                                </div>
+                            </div>
+                            <div class="gallery-context">
+                                <p class="text-sm gallery-title">Tic-Tac-Toe Game</p>
+                                <p class="text-xs">
+                                    這是專案始於自學計畫之前，所以框架的設計是前端同事協助完成的，後面負責文件撰寫並且利用現有的框架調整出適當的說明文件。
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gallery">
+                                <img src="/image/learning-rwd.png" alt="RWD demo" />
+                                <div class="actions">
+                                    <a href="/web-development-day015/index.html" target="_blank" title="RWG demo page">Read More</a>
+                                </div>
+                            </div>
+                            <div class="gallery-context">
+                                <p class="text-sm gallery-title">RWD work</p>
+                                <p class="text-xs">使用 DevTools 是我開始接觸 CSS 及 HTML 的開始。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gallery">
+                                <img src="/image/learning-grid.png" alt="Grid demo" />
+                                <div class="actions">
+                                    <a href="/web-development-day020/index.html" target="_blank" title="Grid demo page">Read More</a>
+                                </div>
+                            </div>
+                            <div class="gallery-context">
+                                <p class="text-sm gallery-title">Grid work</p>
+                                <p class="text-xs">使用 DevTools 是我開始接觸 CSS 及 HTML 的開始。</p>
+                            </div>
+                        </li>                        
+                    </ol>  
                 </div>  
             </section>
         </div>
@@ -158,7 +234,7 @@
                     <div class="context">
                         <h3><strong>全職投入轉職</strong></h3>
                         <p>在目前的學習中已經遇到效率不佳、學習不夠紮實的問題，因此計劃全職投入學習，讓這段時間以及學程的安排最大效益化。
-                            即使未能進入訓練課程，也會在明年前半年全職學習。</p>
+                            即使未能進入訓練課程，也會在明年前半年進行全職學習。</p>
                         <p>另外，可以預期學程中第一階段的學習壓力較小，在這階段也會先安排下一階段的內容學習，
                             降低後面階段的壓力也可以為最終專案最準備及訂定目標。</p>
                     </div>
@@ -173,7 +249,7 @@
                             <li class="text-lg-500 listTitle">11-12 月</li>
                             <li><a href="https://wehelp.tw/coding" target="_blank" title="程式解題系統">WeHelp 程式解題系統</a>
                                 驗收成效，並完成目前手邊的課程規劃。
-                                因為目前是以前端為目標，所以規劃了目前敝司在使用的框架及工具作為學習，包含：Vue, Nuxt 及 Recat</li>
+                                因為目前工作跟學習上接觸到的主要是前端內容，所以也規劃了目前工作中在使用的框架及工具作為學習，包含：Vue, Nuxt 及 Recat</li>
                             <li class="text-lg-500 listTitle">Q4</li>
                             <li>工作上跟前端主管討論了在設計需求之餘會讓我接受前端 onboarding training，
                                 目標是可以接手介面需求較重的需求。</li>
