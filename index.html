@@ -356,14 +356,37 @@
                         <h2>關於這份申請網頁，分享一個開發時的技術心得</h2>
                     </div>
                     <div class="context">
-                        <h3>Question1</h3>
-                        <p>說明問題</p>
-                        <ul>
-                            <li>如何解決</li>
-                            <li>如何解決</li>
-                        </ul>
+                        <h3>從 <code>.container + &lt;img&gt;</code> 到 <br><code>&lt;div style="background-image: url();"&gt;</code></h3>
+                        <p>一開始我用的是課程中常見的 <code>.container + &lt;img&gt;</code> 來放圖片，但後來發現這個方法在畫面比較複雜或要做響應式設計（Responsive Web Design, RWD）的時候就會遇到非預期樣式。</p>
+                        <p>中間嘗試過用 <code>display: flex</code> 來調整畫面，這樣確實可以達到設計上預期的效果，但也在思考將圖片跟文字被拉到同一層級是否是正確的結構。做到一半後我決定去查了一些相近性質的網頁，參考別人是怎麼處理的。</p>
+                        <p>在相近的案例中我發現了一個方法是利用 <code>&lt;div&gt;</code>，並且把所有屬於背景的圖片再統一放進一個 <code>&lt;div&gt;</code> 裡，這樣就能更好地控制圖片的大小和位置，解決了上述問題！</p>
+                        <p>這種做法可以更好控制設計及圖片的 Responsive Web Design ，特別是當圖片只是裝飾作用時。相比之下， <code>.container + &lt;img&gt;</code> 比較適合用在跟內容相關的圖片上，因為它有固定的排版關係。</p>
                     </div>
-                    <div class="gallery"></div>
+                    <div class="context">
+                        <h3>從 <code>&lt;div style="background-image: url();"&gt;</code> <br>回到 <code>.container + &lt;img&gt;</code></h3>
+                        <p>頂端的 <code>&lt;section id="opening"&gt;</code> 是在下方內容都完成後才回來設計的，
+                            那時候很自然地沿用了 <code>&lt;div&gt;</code> 的作法，但是此時就發現在較小的螢幕寬度時，
+                            左側圖片的右邊會被吃掉，在各種 property 的嘗試下依然無法解決。而在隔天才突然想到 <code>.container + &lt;img&gt;</code>
+                             的作法就是可以很好的控制容器內圖片的對其、適應關係，所以重新調整了這邊的寫法。</p>
+                    </div>
+                    <ol>
+                        <li>
+                            <div class="gallery">
+                                <img src="/image/insights-ref.png" alt="ref" />
+                            </div>
+                            <div class="gallery-context">
+                                <p class="text-sm gallery-title">Reference</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gallery">
+                                <img src="/image/insights-yun.png" alt="mine" />
+                            </div>
+                            <div class="gallery-context">
+                                <p class="text-sm gallery-title">Current project</p>
+                            </div>
+                        </li>                       
+                    </ol>
                 </div>  
             </div>
         </section>

@@ -78,6 +78,14 @@ a:hover{
     color: var(--color-zinc-50);
 }
 
+code{
+    margin: 0;
+    padding: 0px 4px;
+    background-color: var(--color-white-20);
+    color: var(--color-zinc-200);
+    border-radius: 4px;
+}
+
 /* container, id = opening */
 .decor-mix{
     display: flex;
@@ -335,6 +343,22 @@ strong{
 #emotions .quote{
     border-radius: 16px 2px 2px 16px;
     background-color: var(--color-white-50);
+}
+
+/* container, id = insights */
+#insights h3, #insights h3 > code{
+    color: var(--color-magenta-500);
+}
+
+#insights ol{
+    display: flex;
+    gap: 24px;
+    overflow: auto;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+    padding: 16px 16px;
+    background-color: var(--color-white-50);
+    backdrop-filter: blur(4px);
 }
 
 /* container, id = bond */
