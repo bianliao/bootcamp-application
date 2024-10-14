@@ -1,6 +1,6 @@
 # bootcamp-application
 
-申請者：廖宜昀
+申請者：廖宜昀 <br>
 E-mail：yiyun.bian.design@gmail.com
 --
 申請題目：
