@@ -39,6 +39,11 @@ body{
     overflow: hidden;   
 }
 
+#merci{
+    background-color: var(--color-zinc-200);
+    height: 100vh;
+}
+
 .fragment{
     max-width: 1440px;
     padding: 80px 80px 200px 80px;
@@ -149,12 +154,12 @@ code{
 }
 
 .opening-name{
-    max-width: 1440px;
+    width: inherit;
     bottom: 20vh;
+    right: 80px;
     position: relative;
     text-align: right;
     margin: 0 auto;
-    padding-right: 80px;
 }
 
 .opening-name h2{
@@ -393,6 +398,41 @@ strong{
     border-radius:16px;
     background-color: var(--color-cyan-500);
     color: var(--color-zinc-50);
+}
+
+/* container, id = merci */
+#merci .fragment{
+    height: 100vh;
+    padding: 0 80px 0 80px;
+}
+
+.merci-context{
+    height: 100vh;
+    position: relative;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 24px;
+}
+
+.merci-name{
+    position: relative;
+    text-align: right;
+    margin: 0 auto;
+    bottom: 12vh;
+    right: 80px;
+}
+
+.merci-name h2{
+    color: var(--color-cyan-500);
+    font-size: var(--font-size-4xl);
+    font-family: 'Cormorant', 'Times New Roman', Times, serif, sans-serif;
+}
+
+.merci-name p{
+    color: var(--color-cyan-500);
 }
 
 /* page-navigation */
