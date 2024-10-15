@@ -79,35 +79,31 @@
 /* Animation classes */
   
 .fade-in {
-    animation: fade-in 0.7s ease-in forwards;
+    animation: fade-in 1.6s ease-in forwards;
 }
   
 .fade-out {
-    animation: fade-out 0.7s ease-out forwards;
+    animation: fade-out 1.6s ease-out forwards;
 }
 
 /* Animation keyframes */
 
 @keyframes fade-in {
     0% {
-        /* opacity: 0; */
         transform: translateX(-100px);
     }
 
     100% {
-        /* opacity: 1; */
         transform: translateX(0);
     }
 }
 
 @keyframes fade-out {
     0% {
-        /* opacity: 1; */
         transform: translateX(0);
     }
 
     100% {
-        /* opacity: 0; */
         transform: translateX(-100px);
     }
 }

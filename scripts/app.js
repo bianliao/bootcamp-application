@@ -57,23 +57,40 @@ window.addEventListener('scroll', () => {
 
 const imgDownElems = document.querySelectorAll(".decor-down");
 
-window.addEventListener('scroll', () => {
-    let fromTop = window.scrollY;
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        imgDownElems.forEach(img => {
+            if (entry.isIntersecting) {
+                img.classList.remove('fade-in');
+                img.classList.add('fade-out');
+            } else {
+                img.classList.remove('fade-out');
+                img.classList.add('fade-in');
+            }
+        });
+    });
+}, { threshold: 0.5 }); // 設置 50% 可見範圍觸發
 
-    for (const section of sections) {
-        if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
-            for (let imgDownElem of imgDownElems) {
-                imgDownElem.classList.remove('fade-in');
-                imgDownElem.classList.add('fade-out');
-            }
-        } else {
-            for (let imgDownElem of imgDownElems) {
-                imgDownElem.classList.remove('fade-out');
-                imgDownElem.classList.add('fade-in');
-            }
-        }
-    }
-});
+sections.forEach(section => observer.observe(section));
+
+
+// window.addEventListener('scroll', () => {
+//     let fromTop = window.scrollY;
+
+//     for (const section of sections) {
+//         if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+//             for (let imgDownElem of imgDownElems) {
+//                 imgDownElem.classList.remove('fade-in');
+//                 imgDownElem.classList.add('fade-out');
+//             }
+//         } else {
+//             for (let imgDownElem of imgDownElems) {
+//                 imgDownElem.classList.remove('fade-out');
+//                 imgDownElem.classList.add('fade-in');
+//             }
+//         }
+//     }
+// });
 
 
 // window.addEventListener('scroll', () => {
