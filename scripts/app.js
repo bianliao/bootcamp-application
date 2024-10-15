@@ -52,3 +52,37 @@ window.addEventListener('scroll', () => {
         }
     }
 });
+
+//animation
+
+const imgDownElems = document.querySelectorAll(".decor-down");
+
+window.addEventListener('scroll', () => {
+    let fromTop = window.scrollY;
+
+    for (const section of sections) {
+        if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+            for (let imgDownElem of imgDownElems) {
+                imgDownElem.classList.remove('fade-in');
+                imgDownElem.classList.add('fade-out');
+            }
+        } else {
+            for (let imgDownElem of imgDownElems) {
+                imgDownElem.classList.remove('fade-out');
+                imgDownElem.classList.add('fade-in');
+            }
+        }
+    }
+});
+
+
+// window.addEventListener('scroll', () => {
+//     if(sections === openSection){
+//         womanElem.classList.remove("fade-in");
+//         womanElem.classList.add("fade-out");
+//     } else {
+//         womanElem.classList.remove("fade-out");
+//         womanElem.classList.add("fade-in");
+//     }
+// });
+
