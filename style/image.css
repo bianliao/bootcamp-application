@@ -1,5 +1,5 @@
 /* decor and img, id = opening */
-.decor-down {
+.decor-opening {
     max-width: 1440px;
     position: relative;
     top: 0;
@@ -41,7 +41,7 @@
 }
 
 
-.decor-img {
+.decor-up, .decor-down, .decor-mid {
     position: absolute;
     background-repeat: no-repeat;
     top: 80px;
@@ -54,7 +54,7 @@
 }
 
 /* decor and img, id = learn */
-#learn .decor-img {
+#learn .decor-up, #learn .decor-down{
     top: 800px;
     right: 80px;
     width: 540px;
@@ -62,15 +62,49 @@
 }
 
 /* decor and img, id = arrange */
-#arrange .decor-img {
+#arrange .decor-up, #arrange .decor-down, #arrange .decor-mid {
     top: 400px;
     right: 80px;
 }
 
 /* decor and img, id = emotions */
-#emotions .decor-img {
+#emotions .decor-up, #emotions .decor-down{
     top: 400px;
     left: 0;
     width: 600px;
     height: 600px;
 }
+
+  
+/* Animation classes */
+  
+.fade-in {
+    animation: fade-in 1.6s ease-in forwards;
+}
+  
+.fade-out {
+    animation: fade-out 1.6s ease-out forwards;
+}
+
+/* Animation keyframes */
+
+@keyframes fade-in {
+    0% {
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100px);
+    }
+}
+  

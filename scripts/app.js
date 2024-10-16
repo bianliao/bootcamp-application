@@ -52,3 +52,54 @@ window.addEventListener('scroll', () => {
         }
     }
 });
+
+//animation
+
+const imgDownElems = document.querySelectorAll(".decor-down");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        imgDownElems.forEach(img => {
+            if (entry.isIntersecting) {
+                img.classList.remove('fade-in');
+                img.classList.add('fade-out');
+            } else {
+                img.classList.remove('fade-out');
+                img.classList.add('fade-in');
+            }
+        });
+    });
+}, { threshold: 0.5 }); // 設置 50% 可見範圍觸發
+
+sections.forEach(section => observer.observe(section));
+
+
+// window.addEventListener('scroll', () => {
+//     let fromTop = window.scrollY;
+
+//     for (const section of sections) {
+//         if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+//             for (let imgDownElem of imgDownElems) {
+//                 imgDownElem.classList.remove('fade-in');
+//                 imgDownElem.classList.add('fade-out');
+//             }
+//         } else {
+//             for (let imgDownElem of imgDownElems) {
+//                 imgDownElem.classList.remove('fade-out');
+//                 imgDownElem.classList.add('fade-in');
+//             }
+//         }
+//     }
+// });
+
+
+// window.addEventListener('scroll', () => {
+//     if(sections === openSection){
+//         womanElem.classList.remove("fade-in");
+//         womanElem.classList.add("fade-out");
+//     } else {
+//         womanElem.classList.remove("fade-out");
+//         womanElem.classList.add("fade-in");
+//     }
+// });
+

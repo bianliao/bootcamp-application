@@ -105,6 +105,7 @@ code{
 
 .decor-greeting{
     width: 0;
+    max-width: 1040px;
     position: relative;
     left: -344px;
     text-align: center;
@@ -213,6 +214,10 @@ code{
     backdrop-filter: blur(4px);
 }
 
+.quote p{
+    padding: 4px 0;
+}
+
 .listTitle{
     margin-top: 12px;
     color: var(--color-zinc-50);
@@ -276,6 +281,10 @@ strong{
     margin: auto 8px;
 }
 
+.gallery-context p{
+    padding: 4px 0;
+}
+
 .gallery-title{
     font-weight: var(--font-weight-500);
 }
@@ -310,8 +319,13 @@ strong{
 
 /* container, id = worthwhile */
 
-#worthwhile .title, #worthwhile .desc, #worthwhile .context{
+#worthwhile .title, #worthwhile .context{
     text-align: center;
+    margin: 0 auto;
+}
+
+#worthwhile .desc{
+    text-align: left;
     margin: 0 auto;
 }
 
@@ -362,14 +376,18 @@ strong{
     flex-flow: row nowrap;
     margin: 0 auto;
     padding: 16px 16px;
-    background-color: var(--color-white-50);
     backdrop-filter: blur(4px);
 }
 
 /* container, id = bond */
 
-#bond .title, #bond .desc, #bond .context{
+#bond .title, #bond .context{
     text-align: center;
+    margin: 0 auto;
+}
+
+#bond .desc{
+    text-align: left;
     margin: 0 auto;
 }
 
@@ -385,8 +403,13 @@ strong{
 
 /* container, id = others */
 
-#others .title, #others .desc, #others .context{
+#others .title, #others .context{
     text-align: center;
+    margin: 0 auto;
+}
+
+#others .desc{
+    text-align: left;
     margin: 0 auto;
 }
 
