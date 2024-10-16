@@ -149,9 +149,9 @@ code{
     height: 100%;
     object-fit: cover;
     background-repeat: no-repeat;
-    opacity: 1;
+    opacity: 0.8;
     position: relative;
-    right: 0;   
+    right: 0; 
 }
 
 .opening-name{
