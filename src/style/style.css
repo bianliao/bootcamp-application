@@ -74,12 +74,10 @@ li{
 }
 
 a{
-    text-decoration: none;
     font-weight: var(--font-weight-500);
 }
 
 a:hover{
-    text-decoration: underline;
     color: var(--color-zinc-50);
 }
 
@@ -315,7 +313,9 @@ strong{
 #arrange strong{
     font-weight: var(--font-weight-500);
     color: var(--color-magenta-500);
+
 }
+
 
 /* container, id = worthwhile */
 
