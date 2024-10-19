@@ -218,12 +218,18 @@ code{
 
 .listTitle{
     margin-top: 12px;
-    color: var(--color-zinc-50);
+    color: var(--color-yellow-500);
 }
 
 strong{
     font-weight: var(--font-weight-500);
     color: var(--color-zinc-50);
+}
+
+#intro em{
+    font-family: 'Cormorant', 'Times New Roman', Times, serif, sans-serif;
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-700);
 }
 
 /* container, id = learn */
@@ -524,3 +530,51 @@ strong{
     display: none;
     transition: none;
 }
+
+/* alert-dialog */
+#alert-dialog{
+    position: fixed;
+    z-index: 59;
+    right: 50vw; 
+    transform: translateX(50%); 
+    bottom: 40px;
+    background-color: var(--color-white-80);
+    margin: 24px 16px;
+    padding: 16px 24px;
+    border-radius: 16px;
+    backdrop-filter: blur(4px);
+    display: none;
+}
+
+.alert-dialog-body{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+    justify-content: center;
+    text-align: center;
+}
+
+#alert-dialog p{
+    color: var(--color-zinc-700);
+    padding-top: 6px;
+}
+
+.alert-dialog-body div{
+    width: 40px;
+    height: 40px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+i.mdi{
+    color: var(--color-zinc-700);
+    display: flex;
+    font-size: 24px;
+    margin: auto;
+}
+
+/* #alert-dialog div:hover{
+    color: var(--color-cyan-500);
+    background-color: var(--color-white-20);
+} */

@@ -10,6 +10,7 @@ const imgUpElems = [
     ...document.querySelectorAll(".decor-up"),
     ...document.querySelectorAll(".decor-img-man")
 ];
+const showAlertDialog = document.getElementById('alert-dialog');
 
 
 
@@ -93,4 +94,11 @@ window.addEventListener('scroll', () => {
     }
 });
 
-
+//alert when innerWidth < 960px
+window.addEventListener('resize', function() {
+    if (window.innerWidth >= 960) {
+        showAlertDialog.style.display = 'none';
+    }else{
+        showAlertDialog.style.display = 'block';
+    }
+});
