@@ -11,7 +11,7 @@ const imgUpElems = [
     ...document.querySelectorAll(".decor-img-man")
 ];
 const showAlertDialog = document.getElementById('alert-dialog');
-
+const deleteAlertDialog = document.getElementById('close-alert-dialog');
 
 
 // hover to show the hint
@@ -102,3 +102,8 @@ window.addEventListener('resize', function() {
         showAlertDialog.style.display = 'block';
     }
 });
+
+deleteAlertDialog.addEventListener('click',function(){
+    showAlertDialog.style.display = 'none';
+})
+

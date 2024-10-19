@@ -565,6 +565,7 @@ strong{
     display: flex; 
     justify-content: center; 
     align-items: center;
+    border-radius: 12px;
 }
 
 i.mdi{
@@ -574,7 +575,7 @@ i.mdi{
     margin: auto;
 }
 
-/* #alert-dialog div:hover{
+.alert-dialog-body div:hover{
     color: var(--color-cyan-500);
     background-color: var(--color-white-20);
-} */
+}
