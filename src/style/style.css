@@ -89,6 +89,11 @@ code{
     border-radius: 4px;
 }
 
+.out-line{
+    font-weight: var(--font-weight-500);
+    text-decoration: underline;
+}
+
 /* container, id = opening */
 .decor-mix{
     display: flex;
@@ -226,7 +231,7 @@ strong{
     color: var(--color-zinc-50);
 }
 
-#intro em{
+#intro em, #arrange em{
     font-family: 'Cormorant', 'Times New Roman', Times, serif, sans-serif;
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-700);
