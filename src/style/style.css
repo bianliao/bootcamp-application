@@ -90,7 +90,6 @@ code{
 }
 
 .out-line{
-    font-weight: var(--font-weight-500);
     text-decoration: underline;
 }
 
@@ -226,15 +225,15 @@ code{
     color: var(--color-yellow-500);
 }
 
-strong{
-    font-weight: var(--font-weight-500);
-    color: var(--color-zinc-50);
-}
-
 #intro em, #arrange em{
     font-family: 'Cormorant', 'Times New Roman', Times, serif, sans-serif;
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-700);
+}
+
+#intro strong{
+    font-weight: var(--font-weight-500);
+    color: var(--color-magenta-500);
 }
 
 /* container, id = learn */
@@ -324,7 +323,6 @@ strong{
 #arrange strong{
     font-weight: var(--font-weight-500);
     color: var(--color-magenta-500);
-
 }
 
 
@@ -373,6 +371,15 @@ strong{
 #emotions .quote{
     border-radius: 16px 2px 2px 16px;
     background-color: var(--color-white-50);
+}
+
+#emotions strong{
+    font-weight: var(--font-weight-500);
+    color: var(--color-magenta-500);
+}
+
+#emotions a{
+    color: var(--color-yellow-500);
 }
 
 /* container, id = insights */
