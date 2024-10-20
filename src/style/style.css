@@ -556,6 +556,7 @@ code{
     border-radius: 16px;
     backdrop-filter: blur(4px);
     display: none;
+    min-width: 240px !important;
 }
 
 .alert-dialog-body{
