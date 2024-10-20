@@ -58,11 +58,15 @@ h2{
 
 h3{
     font-size: var(--font-size-2xl);
-    line-height: var(--font-line-height-100);
+    line-height: 2.5rem;
     font-weight: var(--font-weight-500);
     font-family: var(--font-family);
     margin: 16px 0;
-    padding: 0;
+    padding: 2px 8px;
+    background-color: var(--color-white-80);
+    color: var(--color-cyan-500);
+    border-radius: 4px;
+    display: inline;
 }
 
 p{

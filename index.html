@@ -6,15 +6,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet">
     <script src="./src/scripts/app.js" defer></script>
     <link rel="stylesheet" href="./src/style/global.css">
     <link rel="stylesheet" href="./src/style/style.css">
     <link rel="stylesheet" href="./src/style/image.css">
     <title>Yun's Application</title>
+    <link rel="icon" href="src/image/favicon-96x96.png" type="image/x-icon">
 </head>
 <body>
     <header></header>
     <main>
+        <section id="alert-dialog">
+            <div class="alert-dialog-body">
+                <p>建議使用桌上型螢幕（960px）閱讀。</p>
+                <div><i class="mdi mdi-close" id="close-alert-dialog"></i></div>
+            </div>
+        </section>
         <section class="page-navigation">
             <ul id="scroll-to-section">
                 <li>
@@ -92,21 +100,25 @@
                         <p>嗨，我是廖宜昀 Yi Yun, Liao，目前在 AmazingTalker 擔任 UI/UX 設計師。</p>
                         <p>作為公司唯一的專職設計師，在需求設計之虞還負責建立基礎的設計架構與流程、定義設計規範，
                             以及在研究與開發之間架起溝通橋樑。同時，我也致力於推動以使用者體驗為核心的設計思維分享。</p>
+                        <p>隨著工作及專案接觸到愈來愈多的開發，漸漸被程式的世界觀所吸引，萌生轉職成為工程師的動機，開啟自學前端語言至今。</p>
+                        <p><em>in 2023</em></p>
                         <p>在去年跟友人合作開發了一個以「時間」為單位、以創者者及自由工作者為主要客群的預約平台 
                             <a href="https://staging.bukku.life/booking/QQ" target="_blank" title="BUKKU">BUKKU (DEMO)</a>。
                             作為 PM 及 Designer 之虞，也不斷的跟工程師討論需求及設計方式。</p>
-                        <p>隨著工作及專案接觸到愈來愈多的開發，漸漸被程式的世界觀所吸引，萌生轉職成為工程師的動機。</p>
-                        <p>在 UI/UX designer 之前，作為產品設計師兩年、影視作品美術平面設計師兩個大型專案，及相關設計專案及研究作品都在 
+                        <p><em>before 2022</em></p>
+                        <p>在 UI/UX designer 之前，擔任產品設計師-兩年、影視作品美術平面設計師-兩個大型專案，及相關設計專案及研究作品都在 
                             <a href="https://yiyunbiandesign.editorx.io/home" target="_blank" title="yiyunbiandesign">yiyunbiandesign</a>。</p>
                     </div>
                     <div class="context">
-                        <h3>程式的吸引力</h3>
-                        <p>學習程式的起點是在工作中希望在與開發團隊的溝通上能夠更加精準、有效率。但在學習過程中，
+                        <h3>程式的吸引力——為何想成為前端工程師</h3>
+                        <p class="out-line text-lg">在接觸到前端後，我發現我更喜歡程式的世界，有既定的規則也能在規則內做出靈活度，
+                            是否是個好的程式設計取決於我的邏輯思考，在這邊我更能發揮我所富有的能力。</p>
+                        <p>其實我學習程式的起點是在工作中希望在與開發團隊的溝通上能夠更加精準、有效率。但在學習過程中，
                             更著迷於程式設計的邏輯與思維方式。</p>
                         <ul>
                             <li class="text-lg-500 listTitle">邏輯推理與問題拆解的魅力</li>
-                            <li>在過往的經驗及個人生活中，我擅長邏輯推理與拆解問題的能力，也很享受過程中的成就感。
-                                而程式世界中就是需要不斷的將複雜的需求逐步分解、設計。看到程式如預期運行時是非常令人振奮的。</li>
+                            <li>在過往的經驗及個人生活中，我擅長邏輯推理與拆解問題的能力，也很享受過程中的成就感。這樣進行設計時會導致設計結果不太靈活，
+                                但程式世界中就是需要不斷的將複雜的需求逐步分解、設計。每回看到程式如預期運行時是都非常令人振奮的。</li>
                         </ul>
                         <ul>
                             <li  class="text-lg-500 listTitle">解決問題的角色轉變</li>
@@ -114,10 +126,15 @@
                                 當然兩個工作角色要解決的問題不太相同，但在個人職涯的發展中，我發現自己對技術的興趣愈加濃厚，
                                 在商業及技術的平衡木中逐漸趨向了後者。</li>
                         </ul>
+                        <ul>
+                            <li  class="text-lg-500 listTitle">應用既有的設計能力</li>
+                            <li>轉職為前端後，我亦可以善用當前的專業技術，讓迄今的專業不會因為轉職就無用武之地。
+                                在介面上發揮良好的使用體驗、執行完整的設計框架，且未來在協作上也能協助到理解需求並做到良好溝通。</li>
+                        </ul>
                     </div>
-                    <div class="context">
+                    <div class="context" id="motivation">
                         <h3>申請動機</h3>
-                        <p>在過去三個月中，我已利用業餘時間完成了多堂 Udemy 的課程，但自學過程中遇到三大瓶頸：
+                        <p class="text-lg">在過去三個月中，我完成了多堂 Udemy 的課程，但自學過程中遇到三大瓶頸：
                             <strong>無法檢視學習成效</strong>、<strong>單向學習的困境</strong>、<strong>學習進度難以如期</strong></p>
                         <ul>
                             <li class="text-lg-500 listTitle">不知如何檢視學習成效，專案範圍的抓捏不夠精準</li>
@@ -163,7 +180,7 @@
                             <li>工作中在解決舊產品介面問題時注意到用 Figma 交付反而會有過多不必要資訊，故開始使用 DevTools 進行畫面調整，提供精準的需求說明。</li>
                         </ul>
                         <ul>
-                            <li  class="text-lg-500 listTitle">Git 和 GitHub 協作</li>
+                            <li class="text-lg-500 listTitle">Git 和 GitHub 協作</li>
                             <li>在 AmazingTalker 的設計工作中，為了解決內部設計問題及傳遞元件應用規範，開始在 
                                 <a href="https://res.staging.amazingtalker.com/storybook-ui/index.html?path=/docs/bottomsheet--docs" target="_blank" title="AmazingTalker storybook">Storybook</a>
                                 編寫文件，學會 git flow，並送出第一個 Pull Request。</li>
@@ -206,16 +223,17 @@
                     <div class="context">
                         <h3>自學之路</h3>
                         <ul>
-                            <li class="listTitle">
+                            <li class="text-lg-500 listTitle">
                                 <a href="https://www.udemy.com/course/100-days-of-code-web-development-bootcamp/?couponCode=KEEPLEARNING" target="_blank" title="Udemy course"> 
                                     100 Days Of Code - 2024 Web Development Bootcamp</a>
                             </li>
                             <li>學習拆解頁面設計與開發小單位，並保持主動思考 HTML tag 和 CSS 屬性的使用。</li>
-                            <li class="listTitle">
+                            <li class="text-lg-500 listTitle">
                                 <a href="https://www.udemy.com/course/understand-javascript/?couponCode=KEEPLEARNING" target="_blank" title="Udemy course"> 
                                     JavaScript: Understanding the Weird Parts (2024 Edition)</a>
                             </li>
                             <li>因為注意到前面的課程在基礎的不足，因此上了這堂課來進行鞏固，如：理解 Execution Context 和 Hoisting 等關鍵概念，幫助回到前面的課程將專案進行重寫與應用。</li>
+                            <li class="text-lg-500 listTitle">持續學習中</li>
                         </ul>
                     </div>
                     <ol>
@@ -268,26 +286,29 @@
                         <p class="text-2xl subtitle">How to Arrange Study Time</p>
                         <h2>如果參與這個訓練，會怎麼安排學習時間？</h2>
                     </div>
-                    <div class="context">
+                    <div class="context" id="full-time">
                         <h3><strong>全職投入轉職</strong></h3>
-                        <p>在目前的學習中已經遇到效率不佳、學習不夠紮實的問題，因此計劃全職投入學習，讓這段時間以及學程的安排最大效益化。
+                        <p class="text-lg out-line">在目前的學習中已經遇到效率不佳、學習不夠紮實的問題，因此計劃全職投入學習，讓這段時間以及學程的安排最大效益化。
                             即使未能進入訓練課程，也會在明年前半年進行全職學習。</p>
+                        <p>在閱讀完 WeHelp 的學程規劃及參加今年的 Demo Day 後，我相信學程對於半年的規劃是充實且完整的。
+                            身為學習初學者來說我認為完整且投入地參與所有學程，針對課程進度中較為艱難的部分再進行研讀，會比自己當前胡亂的進行規劃來的有效率。</p>
+                        <p>重要的式找回學習習慣，安排每日規律的讀書時間，目前規劃每日八小時（從早上九點到下午六點）進行課程學習跟專案練習，晚上有必要時則進行更多的延伸閱讀。</p>
                         <p>另外，可以預期學程中第一階段的學習壓力較小，在這階段也會先安排下一階段的內容學習，
                             降低後面階段的壓力，也可以為最終專案做準備及訂定目標。</p>
                     </div>
                     <div class="context">
                         <h3>學程之前</h3>
-                        <p>目前的自學進度仍會持續進行， Q4 的規劃為：
+                        <p>因為學習程式及轉職是我的目標，目前的自學進度並不會就此中斷，仍會持續進行的 Q4 的規劃為：
                         </p>
                         <ul>
-                            <li class="text-lg-500 listTitle">10 月</li>
+                            <li class="text-lg-500 listTitle"><em>Oct.</em></li>
                             <li>利用<a href="https://training.pada-x.com/online" target="_blank" title="彭彭免費線上教">彭彭免費線上教學</a>
                                 複習，補齊知識漏洞。</li>
-                            <li class="text-lg-500 listTitle">11-12 月</li>
+                            <li class="text-lg-500 listTitle"><em>Nov. - Dec.</em></li>
                             <li><a href="https://wehelp.tw/coding" target="_blank" title="程式解題系統">WeHelp 程式解題系統</a>
                                 驗收成效，並完成目前手邊的課程規劃。
                                 因為目前工作跟學習上接觸到的主要是前端內容，所以也規劃了目前工作中在使用的框架及工具作為學習，包含：Vue, Nuxt 及 Recat。</li>
-                            <li class="text-lg-500 listTitle">Q4</li>
+                            <li class="text-lg-500 listTitle"><em>Q4</em></li>
                             <li>工作上跟前端主管討論了在設計需求之餘開始接受前端 onboarding training，
                                 目標是可以接手介面需求較重的需求。</li>
                         </ul>
@@ -327,20 +348,34 @@
                         <p class="text-2xl subtitle">Handling Negative Emotions</p>
                         <h2>請描述一件產生明顯負面情緒的經歷<br>如何處理該情緒？</h2>
                     </div>
-                    <div class="desc">
-                        <p>在過去，曾經被一位非常重視的友人所欺騙，雖然他的視角應該只是覺得沒必要告知我。但這件事讓我對與周圍人的關係產生了質疑，有時也會陷入自我懷疑，是否自己對他人的期望過高才會產生這樣的落差。這些情緒影響了我的生活和工作，且其實當時的我無法有效處理這些感受。</p>
-                        <p>後來，一位值得信任的朋友使用「冰山理論」來幫助我解析情緒。因為情緒背後往往隱藏著深層的期待和需求。在生命中許多事件都無法預期，但如果能解讀情緒、了解內心的期待以及理解行為代價，進而在下次發生類似事件 / 情緒時可以決定是否要調整行為，而不再是使用我們慣例的反射行為。這個經過選擇的行為讓相對所產生的情緒更出於心之所向也才容易消散。</p>
-                        <p>這次經歷在剖析後其實有兩層情緒。</p>
-                        <ul>
-                            <li>第一層：情緒冷漠和自我懷疑的行為，是因為渴望自由，不願再受到影響及傷害所表現出來的情緒跟行為。</li>
-                            <li>第二層：真實的情緒是悲傷的，因為我還是渴望與人保持真誠的連結和相互尊重，渴望著被尊重。</li>
-                        </ul>
-                        <p>在這些情緒跟渴望中，我決定選擇內層（以前的互動方式），並接受這個行為的代價就是未來可能還是會遇到相似的事情。但在這個理解跟取捨後，原本複雜且無法消解的情緒逐漸釋放，生活和工作也得以恢復了原本的節奏。</p>
-                        <p>或許跟原本的題目的初衷有點不同，但我認為處理情緒重要的步驟是：</p>
-                    </div>
                     <div class="context quote">
                         <p class="text-2xl-500">不要逃避或壓抑情緒，而是接收情緒想要傳達的訊息，並做出合適的行為回應。雖然這可能仍然帶來負面的情緒代價，但它會讓我們更清楚自己內心真正渴望的是什麼，讓情緒發自於真心渴望。</p>
                     </div>    
+                    <div class="desc">
+                        <h3>複雜的負面情緒</h3>
+                        <p>在這次的學習中，當我進入 JavaScript 學程後壓力和焦慮感迅速加劇。
+                            隨著時間推移，我開始懷疑自己是否對程式設計真的感興趣，甚至擔心自己無法勝任這個新的領域。
+                            其中我甚至逃避了兩週。</p>
+                        <p>兩週後，我下定決心先釐清情緒的來源。複雜的情緒包含<strong>學習進度緩慢而焦慮、看不懂程式概念而懷疑自己、
+                            也為自己對於轉職的心態三心二意而生氣。</strong>這邊想題外話的分享我用來解析情緒的「冰山理論」。</p>
+                    </div>
+                    <div class="desc">
+                        <h3>面對情緒</h3>
+                        <p><em>「冰山理論」指出情緒背後往往隱藏著深層的期待和需求。在生活中，很多事件無法預測且會反覆發生，
+                            但如果能夠解讀情緒、了解內心的期待，並理解我們行為的代價，我們就能在下次面對類似情況時做出不同的選擇，
+                            而不是僅僅依賴慣性的反應行為。這樣的選擇行為，會讓情緒更符合我們內心真正的渴望，並更容易釋放。</em></p>
+                        <p>這次的自我懷疑具體來說是：</p>
+                        <ul>
+                            <li>外層：情緒不安和自我懷疑到拖延學習的行為，是因為對自己的不信任，害怕無法轉職成功所以才想要趨於現況。</li>
+                            <li>內層：真實的情緒是焦慮，因為我發現學習進度不如預期，且當我想要加速時又會遇到無法有效吸收的主題。</li>
+                        </ul>
+                        <p class="text-lg">經過這些分析後，我明白自己要 <strong>解決的是學習上的問題，並重新安排時間規劃。</strong>
+                            因此，我整理了<a href="#motivation">學習中的瓶頸</a> 並發現了 WeHelp 學程，且決定
+                            <a href="#full-tim">全職投入學習</a>。對於寫程式的決心也更加堅定，因為回頭翻閱學習筆記時
+                            我再次感受到每當成功解決一個問題時那由衷的喜悅。</p>
+                        <p>未來的學習過程中，我仍然可能會遇到瓶頸，但我現在知道這可能是因為我對壓力的過度放大或時間安排過於緊湊。
+                            我學會了可以休息一兩天而不是陷入更深的焦慮循環。通過這種理解和調整後，原本複雜且難以釋放的情緒逐漸消散，更加的下定決心也恢復了原本的學習節奏。</p>
+                    </div>
                 </div>  
             </div>
         </section>
@@ -354,16 +389,20 @@
                     <div class="context">
                         <h3>從 <code>.container + &lt;img&gt;</code> 到 <br><code>&lt;div style="background-image: url();"&gt;</code></h3>
                         <p>在製作問題回覆的介面時，我使用的是課程中常見的 <code>.container + &lt;img&gt;</code> 來放圖片，但在畫面比較複雜或要做響應式設計（Responsive Web Design, RWD）的時候就會遇到非預期樣式。</p>
-                        <p>中間嘗試過用 <code>display: flex</code> 來調整畫面，這樣確實可以達到設計上預期的效果，但也在思考將圖片跟文字被拉到同一層級是否是正確的結構。做到一半後我決定去查了一些相近性質的網頁，參考別人是怎麼處理的。</p>
+                        <p class="listTitle text-lg-500">Step01/ 嘗試 <code>display: flex</code> </p>
+                        <p>這個做法確實可以達到設計上預期的效果，但也在思考將圖片跟文字被拉到同一層級是否是正確的結構。做到一半後我決定去查了一些相近性質的網頁，參考別人是怎麼處理的。</p>
+                        <p class="listTitle text-lg-500">Step02/ 尋找外部網頁案例</p>
                         <p>在相近的案例中我發現了一個方法是利用 <code>&lt;div&gt;</code>，並且把所有屬於背景的圖片再統一放進一個 <code>&lt;div&gt;</code> 裡，這樣就能更好地控制圖片的大小和位置，解決了上述問題！</p>
                         <p>這種做法可以更好控制設計及圖片的 Responsive Web Design ，特別是當圖片只是裝飾作用時。相比之下， <code>.container + &lt;img&gt;</code> 比較適合用在跟內容相關的圖片上，因為它有固定的排版關係。</p>
                     </div>
                     <div class="context">
                         <h3>從 <code>&lt;div style="background-image: url();"&gt;</code> <br>回到 <code>.container + &lt;img&gt;</code></h3>
+                        <p class="listTitle text-lg-500">Step03/ 依需求選擇適合的寫法</p>
                         <p>頂端的 <code>&lt;section id="opening"&gt;</code> 是在下方內容都完成後才回來設計的，
                             那時候很自然地沿用了 <code>&lt;div&gt;</code> 的作法，但是此時就發現在較小的螢幕寬度時，
-                            左側圖片的右邊會被吃掉，在各種 property 的嘗試下依然無法解決。而在隔天才突然想到原本被棄用的 <code>.container + &lt;img&gt;</code>
-                             的作法就是可以很好的控制容器內圖片的對齊、適應關係，所以重新調整了這邊的寫法。</p>
+                            左側圖片的右邊會被吃掉，在各種 property 的嘗試下依然無法解決。</p>
+                        <p>在閒置一天後，才想到原本被棄用的 <code>.container + &lt;img&gt;</code>
+                            的作法就是可以很好的控制容器內圖片的對齊、適應關係，所以重新調整了這邊的寫法。</p> 
                     </div>
                     <ol>
                         <li>
@@ -397,13 +436,13 @@
                         <h2>如何看待自身工作和整個社會群體的連結關係？</h2>
                     </div>
                     <div class="desc">
+                        <p>目前作為服務性產品的設計師，我始終努力在自己能力範圍內做出較好的選擇及降低對用戶的影響。</p>
                         <p>數年前，Frances Haugen 的吹哨事件揭露了臉書將商業利益置於公共利益之上，尤其是對兒童身心健康的影響。
                             內部團隊分析了孩童的腦部成長狀態來找出沈迷契機，並開發了一系列功能，最終目的就是增加用戶使用時間。
                             而這些文件管理層和部分員工都是知悉的。作為一個工作者，我們的工作只是眼前的功能問題而已嗎？在追求公司及個人利益的同時，
                             也是會對整個社會產生深遠影響。</p>
                         <p>我們手中的投票權能改變國家、每一次消費則是為自己理想的世界投票。同樣地，我們的工作又何嘗不是改變整個社會的重要因子。
-                            目前作為服務性產品的設計師，我始終努力在自己能力範圍內做出較好的選擇及降低對用戶的影響。在轉職作為技術工作者後或許跟產品市場研究更遠了一些，
-                            但也期許自己不要忘記了這個標準。</p>
+                            <u>在轉職作為技術工作者後或許跟產品市場研究更遠了一些， 但也期許自己不要忘記了這個標準。</u></p>
                         <p>這些選擇不僅影響到與我共事的同事，還會影響使用產品的客戶，甚至與我們競爭的企業。</p>
                     </div>
                     <div class="context quote">
@@ -420,9 +459,9 @@
                         <h2>其他想要對我們說的事情？</h2>
                     </div>
                     <div class="desc">
-                        <p>感謝有這個機會申請前端學程。我希望能在此解決目前的自學窘境及完成轉職這個最終目標。其實這個網頁算是我第一個獨立完成的專案，部份介面上的作法還可以更完善也可以再增加一些 JS 來達到網頁互動性。
+                        <p>感謝有這個機會申請前端學程。我希望能在此解決目前的自學窘境及完成轉職這個最終目標。其實這個網頁算是我第一個獨立完成的專案，部份介面上的作法還可以更完善補上 RWD 切版也可以再增加一些 JS 來達到網頁互動性。
                             但這個過程讓我更加確認寫程式是有趣、有挑戰性的，也是我想要深耕的領域。</p>
-                        <p>此外，我也期待在學程中可以有更多跟同學一同協作的機會，因為最終在工作上就是需要大量的協作，
+                        <p>此外，<u>我也期待在學程中可以有更多跟同學一同協作的機會，因為最終在工作上就是需要大量的協作</u> ，
                             而產品的 codebase 更是集合大家的開發成果，從中理解大家的編碼習慣並完成自己的目標也是很重要的能力之一。</p>
                         <p>最後，我對學程的設計與師資充滿期待，並相信這將成為我職涯發展中的重要一步。</p>
                     </div>  

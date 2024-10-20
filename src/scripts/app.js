@@ -10,7 +10,8 @@ const imgUpElems = [
     ...document.querySelectorAll(".decor-up"),
     ...document.querySelectorAll(".decor-img-man")
 ];
-
+const showAlertDialog = document.getElementById('alert-dialog');
+const deleteAlertDialog = document.getElementById('close-alert-dialog');
 
 
 // hover to show the hint
@@ -93,4 +94,16 @@ window.addEventListener('scroll', () => {
     }
 });
 
+//alert when innerWidth < 960px
+window.addEventListener('resize', function() {
+    if (window.innerWidth >= 960) {
+        showAlertDialog.style.display = 'none';
+    }else{
+        showAlertDialog.style.display = 'block';
+    }
+});
+
+deleteAlertDialog.addEventListener('click',function(){
+    showAlertDialog.style.display = 'none';
+})
 

@@ -74,12 +74,10 @@ li{
 }
 
 a{
-    text-decoration: none;
     font-weight: var(--font-weight-500);
 }
 
 a:hover{
-    text-decoration: underline;
     color: var(--color-zinc-50);
 }
 
@@ -89,6 +87,10 @@ code{
     background-color: var(--color-white-20);
     color: var(--color-zinc-200);
     border-radius: 4px;
+}
+
+.out-line{
+    text-decoration: underline;
 }
 
 /* container, id = opening */
@@ -220,12 +222,18 @@ code{
 
 .listTitle{
     margin-top: 12px;
-    color: var(--color-zinc-50);
+    color: var(--color-yellow-500);
 }
 
-strong{
+#intro em, #arrange em{
+    font-family: 'Cormorant', 'Times New Roman', Times, serif, sans-serif;
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-700);
+}
+
+#intro strong{
     font-weight: var(--font-weight-500);
-    color: var(--color-zinc-50);
+    color: var(--color-magenta-500);
 }
 
 /* container, id = learn */
@@ -317,6 +325,7 @@ strong{
     color: var(--color-magenta-500);
 }
 
+
 /* container, id = worthwhile */
 
 #worthwhile .title, #worthwhile .context{
@@ -362,6 +371,15 @@ strong{
 #emotions .quote{
     border-radius: 16px 2px 2px 16px;
     background-color: var(--color-white-50);
+}
+
+#emotions strong{
+    font-weight: var(--font-weight-500);
+    color: var(--color-magenta-500);
+}
+
+#emotions a{
+    color: var(--color-yellow-500);
 }
 
 /* container, id = insights */
@@ -523,4 +541,53 @@ strong{
 .hint{
     display: none;
     transition: none;
+}
+
+/* alert-dialog */
+#alert-dialog{
+    position: fixed;
+    z-index: 59;
+    right: 50vw; 
+    transform: translateX(50%); 
+    bottom: 40px;
+    background-color: var(--color-white-80);
+    margin: 24px 16px;
+    padding: 16px 24px;
+    border-radius: 16px;
+    backdrop-filter: blur(4px);
+    display: none;
+}
+
+.alert-dialog-body{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+    justify-content: center;
+    text-align: center;
+}
+
+#alert-dialog p{
+    color: var(--color-zinc-700);
+    padding-top: 6px;
+}
+
+.alert-dialog-body div{
+    width: 40px;
+    height: 40px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    border-radius: 12px;
+}
+
+i.mdi{
+    color: var(--color-zinc-700);
+    display: flex;
+    font-size: 24px;
+    margin: auto;
+}
+
+.alert-dialog-body div:hover{
+    color: var(--color-cyan-500);
+    background-color: var(--color-white-20);
 }
