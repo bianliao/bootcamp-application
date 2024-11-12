@@ -592,3 +592,44 @@ i.mdi{
     color: var(--color-cyan-500);
     background-color: var(--color-white-20);
 }
+
+@media (max-width: 960px) {
+    .fragment{
+        padding: 24px 24px 60px 24px;
+    }  
+    h1{
+        font-size: 3rem;
+    }
+    ul, ol{
+        padding: 8px 8px 4px 8px;
+    }
+    /* container, id = opening */
+    .decor-mix{
+        height: 90vh;
+        max-width: 960px;
+        flex-flow: column-reverse;
+    }
+    .decor-greeting{
+        width: auto;
+        max-width: 960px;
+        top: 100px;
+        left: -50px;
+        gap: 12px;
+        flex-flow: column;
+        align-items: flex-start; 
+    }
+    .decor-img-man img{
+        display: none;
+    }
+    .decor-img-woman{
+        height: 50vh;
+        z-index: 0;
+    }
+    .decor-img-woman img{
+        height: 200%;
+        bottom: 300px;
+    }
+    .opening-name{
+        right: 24px;
+    }
+}
