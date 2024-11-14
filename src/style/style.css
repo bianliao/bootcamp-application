@@ -693,4 +693,10 @@ i.mdi{
         text-align: right;
         margin: 0 auto;
     }
+
+    /* page-navigation */
+
+    .page-navigation p{
+        background-color: var(--color-white-100);
+    }
 }
