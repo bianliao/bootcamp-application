@@ -547,16 +547,17 @@ code{
 #alert-dialog{
     position: fixed;
     z-index: 59;
-    right: 50vw; 
-    transform: translateX(50%); 
+    left: 50%; 
+    transform: translateX(-50%); 
     bottom: 40px;
     background-color: var(--color-white-80);
-    margin: 24px 16px;
+    margin: 16px 16px;
     padding: 16px 24px;
     border-radius: 16px;
     backdrop-filter: blur(4px);
     display: none;
-    min-width: 240px !important;
+    width: 80%;
+    min-width: 240px;
 }
 
 .alert-dialog-body{
@@ -569,12 +570,12 @@ code{
 
 #alert-dialog p{
     color: var(--color-zinc-700);
-    padding-top: 6px;
+    padding-top: 4px;
 }
 
 .alert-dialog-body div{
     width: 40px;
-    height: 40px;
+    height: auto;
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -584,11 +585,112 @@ code{
 i.mdi{
     color: var(--color-zinc-700);
     display: flex;
-    font-size: 24px;
+    font-size: 16px;
     margin: auto;
 }
 
 .alert-dialog-body div:hover{
     color: var(--color-cyan-500);
     background-color: var(--color-white-20);
+}
+
+@media (max-width: 960px) {
+    #opening{
+        height: 90vh;
+    }
+
+    #merci{
+        height: 80vh;
+    }
+
+    .fragment{
+        padding: 24px 24px 60px 24px;
+    }  
+
+    h1{
+        font-size: 3rem;
+    }
+
+    ul, ol{
+        padding: 8px 8px 4px 8px;
+    }
+
+    /* container, id = opening */
+    .decor-mix{
+        height: 90vh;
+        max-width: 960px;
+        flex-flow: column-reverse;
+    }
+
+    .decor-greeting{
+        width: auto;
+        max-width: 960px;
+        top: 100px;
+        left: -50px;
+        gap: 12px;
+        flex-flow: column;
+        align-items: flex-start; 
+    }
+
+    .decor-img-man img{
+        display: none;
+    }
+
+    .decor-img-woman{
+        height: 50vh;
+        z-index: 0;
+    }
+
+    .decor-img-woman img{
+        height: 200%;
+        bottom: 300px;
+    }
+
+    .opening-name{
+        right: 24px;
+    }
+
+    /* container, id = intro, arrange */
+    .title{
+        padding: 0 0 24px 0;
+    }
+
+    .desc{
+        padding: 16px 0 16px 0;
+        max-width: 80%;
+        backdrop-filter: blur(4px);
+    }
+
+    .context{
+        padding: 24px 0 0 0;
+        max-width: 80%;
+        backdrop-filter: blur(4px);
+    }
+
+    .quote{
+        margin: 24px 0 0 0;
+        padding: 16px 24px;
+    }
+
+    /* container, id = merci */
+    #merci .fragment{
+        height: 80vh;
+        padding: 0 40px;
+    }
+    .merci-context{
+        height: 80vh;
+        gap: 12px;
+    }
+    .merci-context{
+        height: 80vh;
+    }
+
+    .merci-name{
+        width: inherit;
+        bottom: 20vh;
+        right: 24px;
+        position: relative;
+        text-align: right;
+        margin: 0 auto;
+    }
 }

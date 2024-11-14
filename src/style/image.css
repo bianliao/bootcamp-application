@@ -137,3 +137,45 @@
     }
 }
   
+
+@media (max-width: 960px) {
+    .decor-opening {
+        max-width: 960px;
+    }
+
+    .decor-img-decor {
+        transform: unset; 
+    }
+
+    .decor-img-center {
+        width: 960px;
+        height: 910px;
+        top: unset;
+        left: unset;
+        transform: unset; 
+    }
+
+    /* decor and img, id = intro */
+    .decor-up, .decor-down, .decor-mid {
+        right: unset;
+        width: 400px;
+        height: 360px;
+    }
+    /* decor and img, id = learn */
+    #learn .decor-up, #learn .decor-down{
+        right: 0;
+        width: 360px;
+        height: 226px;
+    }
+    #arrange .decor-up, #arrange .decor-down, #arrange .decor-mid {
+        top: 400px;
+        right: 0px;
+    }
+    /* decor and img, id = emotions */
+    #emotions .decor-up, #emotions .decor-down{
+        top: 200px;
+        left: -120px;
+        width: 400px;
+        height: 400px;
+    }
+}

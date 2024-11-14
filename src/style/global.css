@@ -26,8 +26,7 @@
     --font-line-height-sm: 1.25rem; /*20px*/
     --font-line-height-base: 1.5rem; /*24px*/
     --font-line-height-lg: 1.75rem; /*28px*/
-    --font-line-height-xl: 1.75rem; /*28px*/
-    --font-line-height-2xl: 2rem; /*32px*/
+    --font-line-height-xl: 2rem; /*32px*/
     --font-line-height-100: 1.2;
     
     --font-size-xs: 0.75rem; /*12px*/
@@ -129,14 +128,56 @@ ul{
 
 .text-2xl {
     font-size: var(--font-size-2xl);
-    line-height: var(--font-line-height-2xl);
+    line-height: var(--font-line-height-xl);
     font-weight: var(--font-weight-400);
     font-family: var(--font-family);
 }
 
 .text-2xl-500 {
     font-size: var(--font-size-2xl);
-    line-height: var(--font-line-height-2xl);
+    line-height: var(--font-line-height-xl);
     font-weight: var(--font-weight-500);
     font-family: var(--font-family);
+}
+
+@media (max-width: 960px) {
+    h2{
+        font-size: var(--font-size-2xl);       
+    }
+
+    h3{
+        font-size: var(--font-size-lg);
+        line-height: var(--font-line-height-lg);
+    }
+
+    p{
+        font-size: var(--font-size-sm);
+        padding: 4px 0 4px 0;
+    }
+
+    ul{
+        font-size: var(--font-size-sm);
+        line-height: var(--font-line-height-sm);
+    }
+
+    .text-lg {
+        font-size: var(--font-size-base);
+        line-height: var(--font-line-height-base);
+    }
+
+    .text-lg-500 {
+        font-size: var(--font-size-base);
+        line-height: var(--font-line-height-base);
+    }
+
+    .text-2xl {
+        font-size: var(--font-size-lg);
+        line-height: var(--font-line-height-lg);
+    }
+
+    .text-2xl-500 {
+        font-size: var(--font-size-lg);
+        line-height: var(--font-line-height-lg);
+    }
+
 }
