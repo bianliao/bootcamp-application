@@ -105,5 +105,22 @@ window.addEventListener('resize', function() {
 
 deleteAlertDialog.addEventListener('click',function(){
     showAlertDialog.style.display = 'none';
-})
+});
 
+//hide hint when innerWidth < 960px
+window.addEventListener('click',function(){
+    if (window.innerWidth < 960) {
+        hideShortcut();
+        }
+});
+
+
+function hideShortcut() {
+    for (const hint of displayHint){
+        if (hint.style.display === 'none' || hint.style.display === '') {
+            hint.style.display = 'block';
+        } else {
+            hint.style.display = 'none';
+        }
+    }
+}
